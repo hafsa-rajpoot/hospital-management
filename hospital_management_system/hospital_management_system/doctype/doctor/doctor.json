@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "D.####",
+ "creation": "2024-06-08 16:31:57.470199",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor_id",
+  "full_name",
+  "specialization",
+  "section_break_ex8tb",
+  "department",
+  "contact_number",
+  "email",
+  "section_break_2ofs9",
+  "address",
+  "date_of_birth",
+  "gender",
+  "column_break_p7rss",
+  "qualifications",
+  "experience",
+  "joining_date",
+  "consultation_fees",
+  "profile_picture",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor_id",
+   "fieldtype": "Data",
+   "label": "doctor_id"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "full_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "specialization",
+   "options": "Specialization",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "contact_number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "address"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "date_of_birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "fieldname": "qualifications",
+   "fieldtype": "Data",
+   "label": "qualifications",
+   "reqd": 1
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Int",
+   "label": "experience",
+   "reqd": 1
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "joining_date"
+  },
+  {
+   "fieldname": "consultation_fees",
+   "fieldtype": "Currency",
+   "label": "consultation_fees"
+  },
+  {
+   "fieldname": "profile_picture",
+   "fieldtype": "Attach Image",
+   "label": "profile_picture"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Doctor",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_ex8tb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2ofs9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_p7rss",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-08 17:16:52.753303",
+ "modified_by": "Administrator",
+ "module": "Hospital Management System",
+ "name": "Doctor",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Healthcare Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Doctor",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Receptionist",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
